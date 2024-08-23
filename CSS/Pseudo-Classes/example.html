@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+
+        .header{
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        main{
+            padding: 20px;
+        }
+
+        .list{
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .list li{
+            padding: 10px;
+            margin-bottom: 5px;
+            background-color: #f4f4f4;
+        }
+
+       
+
+
+        .list li:first-child{
+            background-color: #e0e0e0;
+        }
+        
+        .list li:last-child{
+            background-color: #d0d0d0;
+        }
+
+        .list li:nth-child(odd){
+            background-color: #a31717;
+        }
+
+        .list li:nth-child(even){
+            background-color: #1c7190;
+        }
+
+
+        .link{
+            display: block;
+            padding: 10px;
+            margin: 5px 0;
+            text-decoration: none;
+            color: blue;
+            border: 1px solid transparent;
+        }
+
+
+        .link:hover{
+            color: red;
+            text-decoration: underline;
+        }
+       
+        .link:active{
+            background-color: lightgray;
+        }
+
+        /* .link:visited{
+            color: purple;
+        } */
+
+
+        .input-field:focus{
+            border: 2px solid green;
+            outline: none;
+        }
+
+        .list li:not(.special){
+            font-weight:bold;
+        }
+
+
+    </style>
+</head>
+<body>
+    
+
+
+
+    <header class="header">
+        <h1>Pseudo-Classes Example</h1>
+
+    </header>
+
+    <main>
+        <ul class="list">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li class="special">Item 3</li>
+            <li>Item 4</li>
+        </ul>
+
+
+        <a href="https://example.com" class="link link1">Link 1</a>
+        <a href="https://example.com" class="link link2">Link 2</a>
+        <a href="https://example.com" class="link link3">Link 3</a>
+        <a href="https://example.com" class="link link4">Link 4</a>
+
+
+        <input type="text" placeholder="Focus on Me" class="input-field">
+        <button class="btn">Click Me</button>
+    </main>
+</body>
+</html>

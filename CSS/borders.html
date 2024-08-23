@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      div {
+        width: 600px;
+        height: 200px;
+        background: #30c0b4;
+        text-align: center;
+        margin: 20px;
+        padding: 20px;
+      }
+
+      /* .element {
+        border-top-width: 2px;
+        border-top-style: solid;
+        border-top-color: blue;
+
+        border-right-width: 3px;
+        border-right-style: dashed;
+        border-right-color: #000;
+
+        border-bottom-width: 1px;
+        border-bottom-style: hidden;
+        border-bottom-color: #c41919;
+
+        border-left-width: 4px;
+        border-left-style: double;
+        border-left-color: #d0b414;
+      } */
+
+      /* syntax => rule to write something */
+
+      .element {
+        /* border: width style color; */
+        /* border: 2px solid blue; */
+        border-top: 2px solid blue;
+        border-right: 3px dashed #000;
+        border-bottom: 1px hidden #c41919;
+        border-left: 1px solid #000;
+      }
+
+      /* border-radius */
+
+      .border-example {
+        border: 5px solid black;
+        /* border-radius: 50px; */
+        border-top-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="element">Box</div> -->
+
+    <div class="border-example solid-border">Solid-border</div>
+    <!-- <div class="border-example dashed-border">dashed-border</div>
+    <div class="border-example dotted-border"> dotted-border</div>
+    <div class="border-example  dotted-border">dotted-border</div>
+    <div class="border-example ridge-border">ridge-border"</div>
+    <div class="border-example outset-border">outset-border</div> -->
+    <!-- <div class="border-example no-border">no-border</div> -->
+  </body>
+</html>

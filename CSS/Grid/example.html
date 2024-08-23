@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Template</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        padding: 40px;
+        max-width: 1200px;
+        margin: auto;
+      }
+
+      .text-content {
+        grid-column: span 1;
+      }
+
+      .heading {
+        font-size: 36px;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+
+      .subtext {
+        margin-bottom: 30px;
+      }
+
+      .view-gallery {
+        display: inline-block;
+        margin-bottom: 20px;
+        font-size: 18px;
+        text-decoration: none;
+        color: black;
+        border-bottom: 2px solid black;
+      }
+
+      .images {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        grid-column: span 1;
+      }
+
+      .images img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="text-content">
+        <h1 class="heading">
+          The Intersection of Fashion and Vision: Crafting Iconic Imagery
+        </h1>
+        <a href="#" class="view-gallery">View All Gallery &#8594;</a>
+        <p class="subtext">
+          My approach focuses on creating images that are as stylish and
+          captivating as the fashion they represent, merging elegance with
+          cutting-edge creativity.
+        </p>
+      </div>
+      <div class="images">
+        <img
+          src="https://plus.unsplash.com/premium_photo-1675896084254-dcb626387e1e?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D"
+          alt="Image 1"
+        />
+        <img
+          src="https://plus.unsplash.com/premium_photo-1675896084254-dcb626387e1e?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D"
+          alt="Image 2"
+        />
+        <img
+          src="https://plus.unsplash.com/premium_photo-1675896084254-dcb626387e1e?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D"
+          alt="Image 3"
+        />
+        <img
+          src="https://plus.unsplash.com/premium_photo-1675896084254-dcb626387e1e?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D"
+          alt="Image 4"
+        />
+      </div>
+    </div>
+  </body>
+</html>

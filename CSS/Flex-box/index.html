@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .box {
+        height: 100px;
+        width: 100px;
+        background-color: blue;
+        font-size: 28px;
+        /* flex-shrink: 1;
+        flex-grow: 1; */
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .container {
+        border: 2px solid black;
+        min-height: 600px;
+        display: flex;
+        flex-direction: row;
+
+        /* main axis */
+        justify-content: center;
+        align-items: center;
+
+        align-content: center;
+        /* column-gap: 20px;
+        row-gap: 10px; */
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+
+      #box-1 {
+        flex-grow: 5;
+      }
+
+      .example {
+        background-color: #555;
+        height: 200px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- flexbox => 1D -->
+
+    <!-- main axis 
+    cross axis -->
+
+    <div class="container">
+      <div id="box-1" class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+      <div class="box">5</div>
+      <!-- <div class="box">6</div>
+      <div class="box">7</div>
+      <div class="box">8</div>
+      <div class="box">9</div> -->
+    </div>
+
+    <div class="example">
+      <h1>My Heading</h1>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe itaque
+        fugit iusto facere ducimus alias ipsum incidunt, laboriosam unde veniam.
+      </p>
+    </div>
+  </body>
+</html>

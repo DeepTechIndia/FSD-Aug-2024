@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCeTox84rBe4ZGrKjvH5fo43YCJOxZ9mivFqW0A5vPDQVcyWl_GMoMxRTP9aMKKKc5v-A&usqp=CAU");
+            background-attachment: fixed;
+            background-size:cover;
+        }
+        .section1{
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+        .section2{
+            background-image: url("bac-img.jpg");
+            /* cover => image will be stretched / we loss little image parts */
+            /* contain=> adjust entire image to stay in container, repeat-x */
+            background-size: contain;
+            color: white;
+            text-align: center;
+            height: 200px;
+        }
+
+        .section3{
+            background-image: url("bac-img.jpg");
+            height: 100px;
+            background-size: contain;
+
+            background-repeat: repeat-x;
+        }
+
+
+
+        .section4{
+            background-image: url("https://cdn.pixabay.com/photo/2016/06/02/02/33/triangles-1430105_1280.png");
+            background-position: top left;
+            height: 500px;
+            /* background-size: cover; */
+        }
+
+        .section6{
+            background-image: url("https://cdn.pixabay.com/photo/2016/06/02/02/33/triangles-1430105_1280.png");
+            background-attachment: fixed;
+            color: white;
+            text-align: center;
+            padding: 50px;
+            height: 100px;
+        }
+
+    </style>  </head>
+  <body>
+    <section class="section1">
+      <h2>section 1: background-color</h2>
+    </section>
+    <section class="section2">
+        <h2>section 2: background-Image</h2>
+      </section>
+      <section class="section3">
+        <h2>section 3: background-repeat</h2>
+      </section>
+      <section class="section4">
+        <h2>section 4: background-position</h2>
+      </section>
+      <section class="section5">
+        <h2>section 5: background-size</h2>
+      </section>
+      <section class="section6">
+        <h2>section 6: background-attachment</h2>
+      </section>
+    
+</html>

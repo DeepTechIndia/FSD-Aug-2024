@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSS Position Example</title>
+  <style>
+   body {
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+   }
+
+   header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+   }
+
+   /* section {
+    margin-top: 60px;
+    padding: 20px;
+   } */
+
+   .box {
+    width: 100px;
+    height: 100px;
+    background-color: #4caf50;
+    color: #fff;
+    text-align: center;
+    line-height: 100px;
+    font-size: 18px;
+    margin-bottom: 20px;
+   }
+
+   .relative-box {
+    position: relative;
+    top: 20px;
+    left: 20px;
+   }
+
+   .absolute-box {
+    position: absolute;
+    top: 50px;
+    right: 20px;
+   }
+
+   .fixed-box {
+    position: fixed;
+    top: 120px;
+    right: 20px;
+   }
+
+   .sticky-box {
+    position: sticky;
+    top: 20px;
+    background-color: #ffeb3b;
+   }
+  </style>
+ </head>
+ <body>
+  <!-- <header>
+   <h1>CSS Position Example</h1>
+  </header> -->
+
+  <section>
+   <div class="box relative-box">Relative</div>
+   <div class="box absolute-box">Absolute</div>
+   <!-- <div class="box fixed-box">Fixed</div> -->
+   <!-- <div class="box sticky-box">Sticky</div> -->
+
+   <!-- Add more content to trigger scrolling -->
+   <!-- <div style="height: 1000px">use lorem 100</div> -->
+  </section>
+ </body>
+</html>

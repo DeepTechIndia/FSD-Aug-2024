@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .example{
+        width: 200px;
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin-bottom: 10px;
+      }
+
+      .normal{
+        white-space: normal;
+      }
+      .nowrap{
+        white-space: nowrap;
+      }
+
+      .pre{
+        white-space: pre;
+      }
+      .pre-line{
+        white-space: pre-line;
+      }
+      .pre-wrap{
+        white-space: pre-wrap;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="example normal">
+      <p>
+        This is some text with space.                          Line breaks are also 
+        preserved for
+        
+        
+        better
+        readability
+      </p>
+    </div>
+    <div class="example nowrap">
+      <p>This is some text with spaces.
+         Line breaks are not allowed              in this example</p>
+    </div>
+    <div class="example pre">
+      <p>This is some                 text 
+        with
+        line breaks preserved.
+        spaces are also preserved
+
+      </p>
+    </div>
+    <div class="example pre-line">
+      <p>This is some text with 
+        line breaks                    preserved.
+        spaces are 
+        collapsed
+      </p>
+    </div>
+    <div class="example pre-wrap">
+      <p>This is spome text with                 both 
+        line breaks and space
+         preserved.
+      Space are not collapsed</p>
+    </div>
+  </body>
+</html>
