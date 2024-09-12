@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+
+      header,
+      nav,
+      main,
+      footer {
+        padding: 18px;
+        text-align: center;
+      }
+
+      header {
+        background-color: #4caf50;
+        color: white;
+      }
+
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        background-color: #333;
+      }
+
+      nav ul li {
+        margin: 0 18px;
+      }
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+      }
+
+      .container {
+        display: flex;
+        padding: 18px;
+      }
+
+      aside {
+        background-color: #f4f4f4;
+        padding: 18px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      main {
+        padding: 20px;
+      }
+
+      footer {
+        background-color: #f1f1f1;
+        padding: 16px 0;
+      }
+
+      @media (max-width: 1024px) {
+        .container {
+          flex-direction: column;
+        }
+      }
+      @media (max-width: 768px) {
+        nav ul {
+          flex-direction: column;
+        }
+        nav ul li {
+          margin: 8px 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>My Web Application</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <aside>
+        <h2>Sidebar</h2>
+        <p>
+          This is the Sidebar content. Here you can add additional information,
+          links, or Ad
+        </p>
+      </aside>
+      <main>
+        <section id="intro">
+          <h2>Introduction</h2>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa dolorem
+          perferendis tenetur velit dignissimos hic quia natus quisquam esse
+          laborum.
+        </section>
+        <section id="features">
+          <h2>Features</h2>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa dolorem
+          perferendis tenetur velit dignissimos hic quia natus quisquam esse
+          laborum.
+        </section>
+        <section id="services">
+          <h2>Services</h2>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa dolorem
+          perferendis tenetur velit dignissimos hic quia natus quisquam esse
+          laborum.
+        </section>
+        <section id="contact">
+          <h2>Contact</h2>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa dolorem
+          perferendis tenetur velit dignissimos hic quia natus quisquam esse
+          laborum.
+        </section>
+      </main>
+    </div>
+
+    <footer>
+      <p>&copy; 2024 My Web Application</p>
+    </footer>
+  </body>
+</html>

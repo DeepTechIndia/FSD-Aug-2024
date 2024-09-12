@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      header,
+      nav,
+      main,
+      footer {
+        padding: 20px;
+        text-align: center;
+      }
+
+      header {
+        background-color: #3498db;
+        color: #fff;
+      }
+
+      nav {
+        background-color: #2ecc71;
+      }
+
+      ul {
+        list-style-type: none;
+      }
+
+      li {
+        display: inline;
+        margin-right: 20px;
+      }
+
+      a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      main {
+        background-color: #f39c12;
+      }
+
+      section {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      footer {
+        background-color: #e74c3c;
+        color: #fff;
+      }
+
+      @media screen and (max-width: 600px) {
+        nav {
+          display: block;
+        }
+
+        li {
+          display: block;
+          margin-bottom: 10px;
+        }
+      }
+
+      @media screen and (min-width: 601px) and (max-width: 1024px) {
+        main {
+          padding: 40px;
+        }
+      }
+
+      @media screen and (min-width: 1025px) {
+        ul {
+          display: flex;
+          justify-content: center;
+        }
+
+        li {
+          margin-right: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- based on your screen size 
+
+@media media-type and (media-feature){
+  styles goes here
+}
+
+@media screen and (min 760px){
+    p{
+        font-size : 20px
+    }
+
+    flex{
+        display:flex
+    }
+} -->
+
+    <header>
+      <h1>Responsive Web App</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section>
+        <h2>Welcome to our website</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
+          beatae, tenetur minus nesciunt odio explicabo molestias consequatur
+          magnam quisquam non!
+        </p>
+      </section>
+    </main>
+
+    <footer>&copy; 2024 Reesponsive web Page</footer>
+  </body>
+</html>
