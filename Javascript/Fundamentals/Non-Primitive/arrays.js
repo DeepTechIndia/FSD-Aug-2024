@@ -64,9 +64,8 @@ console.log(fruits); //[mango,cherry,orange] */
 // fruits.unshift("lemon");
 // console.log(fruits);push
 
-fruits.splice(2, 2, "banana"); //["apple","lemon","banana","cherry"]
-console.log(fruits);
- 
+/* fruits.splice(2, 2, "banana"); //["apple","lemon","banana","cherry"]
+console.log(fruits); */
 
 //slice
 /* 
@@ -103,6 +102,8 @@ console.log(flatArr);
 
 console.log(arr.flat(Infinity));
  */
-
-
-
+/* 
+const arr = [1, 2, 3, 4];
+arr.push(2);
+arr[2] = 5;
+console.log(arr); */
