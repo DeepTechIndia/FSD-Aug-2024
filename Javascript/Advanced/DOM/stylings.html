@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .highlight {
+        background-color: yellow;
+        font-weight: bold;
+      }
+
+      .blueBackground {
+        background-color: blue;
+      }
+
+      .whiteText {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <!--     <div id="myDiv">This is a div element</div>
+
+    <p id="myParagraph">This is a pargraph</p> -->
+
+    <p id="para">Click the buttons to change styles</p>
+
+    <script>
+      /*   const div = document.getElementById("myDiv");
+      div.style.backgroundColor = "lightblue";
+
+      const para = document.getElementById("myParagraph");
+      para.style.color = "red";
+      para.style.fontSize = "20px";
+      para.style.fontWeight = "bold"; */
+
+      //   const paragraph = document.getElementById("myParagraph");
+      //   paragraph.classList.add("highlight");
+      //   console.log(paragraph);
+
+      //   paragraph.classList.remove("highlight");
+
+      /*  const div = document.getElementById("myDiv");
+      div.style.backgroundColor = "lightblue";
+      div.style.padding = "10px";
+      div.style.border = "2px solid black"; */
+
+      const paragraph = document.getElementById("para");
+
+      paragraph.classList.add("blueBackground", "whiteText");
+
+      setTimeout(() => {
+        paragraph.classList.remove("blueBackground", "whiteText");
+      }, 2000);
+    </script>
+  </body>
+</html>

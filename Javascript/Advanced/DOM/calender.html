@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      #calendar {
+        display: grid;
+        grid-template-columns: repeat(7, 100px);
+        grid-template-rows: repeat(5, 100px);
+        gap: 2px;
+      }
+
+      .day {
+        width: 100px;
+        height: 100px;
+        border: 1px solid gray;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="calendar"></div>
+
+    <script>
+      const calendar = documnet.getElementById("calendar");
+
+      for (let i = 1; i < 35; i++) {
+        const day = document.createElement("div");
+        day.classList.add("day");
+        day.textContent = i;
+        calendar.appendChild(day);
+      }
+    </script>
+  </body>
+</html>

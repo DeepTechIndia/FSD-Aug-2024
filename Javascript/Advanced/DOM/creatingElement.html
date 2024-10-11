@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- creating -->
+    <div id="container">
+      <p id="existingPargraph">Existing paragraph</p>
+    </div>
+
+    <script>
+      const newDiv = document.createElement("div");
+      newDiv.className = "main";
+      newDiv.id = "1234";
+      newDiv.setAttribute("title", "created title");
+      newDiv.textContent = "This is a new div element";
+
+      //   console.log(newDiv);
+
+      const container = document.getElementById("container");
+      container.appendChild(newDiv);
+
+      const newParagraph = document.createElement("p");
+      newParagraph.textContent = "Prepended Paragraph";
+      container.prepend(newParagraph);
+
+      /*    const existingPargraph = document.getElementById("existingPargraph");
+      const paragraph = document.createElement("p");
+      //   paragraph.textContent = "Inserted Before Paragraph";
+      // existingPargraph.before(paragraph);
+      paragraph.textContent = "Inserted After Paragraph";
+
+      existingPargraph.after(paragraph); */
+
+      /* const existingPargraph = document.getElementById("existingPargraph");
+      const paragraph = document.createElement("p");
+      paragraph.textContent = "Inserted Before  using insertBefore";
+      container.insertBefore(paragraph, existingPargraph); */
+
+      const existingPargraph = document.getElementById("existingPargraph");
+      const newPara = document.createElement("p");
+      newPara.textContent = "This paragraph replaced the existing one";
+      container.replaceChild(newPara, existingPargraph);
+    </script>
+  </body>
+</html>

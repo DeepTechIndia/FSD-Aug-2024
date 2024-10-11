@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="header">Hello, World</h1>
+    <p class="paragraph">This is a paragraph</p>
+    <p class="paragraph">THis is another paragraph</p>
+
+    <div>
+      <span class="highlight">Highlighted text</span>
+    </div>
+
+    <script>
+      const header = document.getElementById("header");
+      header.style.color = "blue";
+
+      const paragraphs = document.getElementsByClassName("paragraph");
+      //   console.log(paragraphs);
+
+      for (let i = 0; i < paragraphs.length; i++) {
+        paragraphs[i].style.fontWeight = "bold";
+      }
+
+      const divs = document.getElementsByTagName("div");
+      for (let i = 0; i < divs.length; i++) {
+        divs[i].style.border = "1px solid black";
+      }
+
+      const highlight = document.querySelector(".highlight");
+      highlight.style.backgroundColor = "yellow";
+      highlight.style.color = "white";
+
+      const allParagraphs = document.querySelectorAll(".paragraph");
+
+      allParagraphs.forEach((paragraph) => {
+        paragraph.style.color = "red";
+      });
+      //   console.log(allParagraphs);
+    </script>
+  </body>
+</html>

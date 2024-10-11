@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="container"></div>
+
+    <script>
+      /* const container = document.getElementById("container");
+
+      const ul = document.createElement("ul");
+
+      const li1 = document.createElement("li");
+      li1.textContent = "Item 1";
+      const li2 = document.createElement("li");
+      li2.textContent = "Item 2";
+      const li3 = document.createElement("li");
+      li3.textContent = "Item 3";
+      const li4 = document.createElement("li");
+      li4.textContent = "Item 4";
+
+      ul.appendChild(li1);
+      ul.appendChild(li2);
+      ul.appendChild(li3);
+      ul.appendChild(li4);
+
+      container.appendChild(ul); */
+
+      /*       const container = document.getElementById("container");
+
+      const ul = document.createElement("ul");
+
+      const items = ["Item 1", "Item 2", "Item 3", "Item 4"];
+
+      for (let i = 0; i < items.length; i++) {
+        const li = document.createElement("li");
+        li.textContent = items[i];
+        ul.append(li);
+      }
+
+      container.append(ul); */
+
+      const container = document.getElementById("container");
+      const ul = document.createElement("ul");
+      const users = [
+        {
+          name: "user 1",
+          age: 20,
+        },
+        {
+          name: "user 2",
+          age: 23,
+        },
+        {
+          name: "user 3",
+          age: 25,
+        },
+        {
+          name: "user 4",
+          age: 20,
+        },
+      ];
+
+      users.forEach((user) => {
+        const li = document.createElement("li");
+        li.textContent = `Name : ${user.name} , Age:  ${user.age}`;
+        ul.append(li);
+      });
+      container.append(ul);
+    </script>
+  </body>
+</html>

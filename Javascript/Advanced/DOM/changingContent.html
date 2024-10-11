@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .hidden {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="myParagraph">This ia a <strong>paragraph</strong>.</p>
+
+    <!--     <div id="content">
+      <p>This is visible text</p>
+      <p class="hidden">THis text is hidden</p>
+    </div> -->
+
+    <script>
+      // text Content
+      const paragraph = document.getElementById("myParagraph");
+      //   paragraph.textContent = "This is the new text content";
+      console.log(paragraph.textContent);
+
+      //innerHTML
+
+      //   paragraph.innerHTML = "This is the new <em>HTML</em> content.";
+
+      console.log(paragraph.innerHTML);
+      //innerText
+      //   paragraph.innerText = "This is the new text content with innerText";
+      /* 
+      const content = document.getElementById("content");
+      console.log(content.textContent);
+
+      console.log(content.innerText); */
+
+      //outerHTML
+
+      paragraph.outerHTML = '<div id="myPara">This is a <em>div</em> now</div>';
+      console.log(document.getElementById("myPara"));
+    </script>
+  </body>
+</html>
