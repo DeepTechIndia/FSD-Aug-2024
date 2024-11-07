@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Browser Storage => users browser
+    cookies
+    local storage
+    session storage
+    indexDb
+    -->
+
+    <!-- local storage => data does not expire  => 5- 10MB => string format= > key - value-->
+
+    <!-- 1.setItem => to store the data in LS
+        localStorage.setIem('name', 'abc')
+
+    2. getItem => to retrieve the data
+    localStorage.getItem(name)
+
+3.removeItem => to remove the specific  item
+localStorage.removeItem('name')
+
+4.clear => to clear everything in ls 
+localStorage.Clear()-->
+
+    <h1>Local Storage</h1>
+    <script>
+      //setItem
+      localStorage.setItem("username", "abc");
+      localStorage.setItem("email", "abc@gmail.com");
+
+      //getItem
+      /* 
+      const userName = localStorage.getItem("username");
+      const email = localStorage.getItem("email");
+      console.log("Retrieving from local storage");
+      console.log("Username :", userName);
+      console.log("emnail :", email); */
+
+      //remove the data
+
+      /*   localStorage.removeItem("email");
+
+      const removedData = localStorage.getItem("email");
+      console.log("Email after removal:", removedData);
+
+ */
+
+      //  clear
+      // localStorage.clear();
+      // console.log("All data is cleared");
+    </script>
+  </body>
+</html>

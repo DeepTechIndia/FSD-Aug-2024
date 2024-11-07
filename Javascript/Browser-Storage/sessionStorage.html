@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- session storage -->
+
+    <!-- local storage => data does not expire  => 5- 10MB => string format= > key - value-->
+
+    <!-- 1.setItem => to store the data in LS
+        sessionStorage.setIem('name', 'abc')
+
+    2. getItem => to retrieve the data
+    sessionStorage.getItem(name)
+
+3.removeItem => to remove the specific  item
+sessionStorage.removeItem('name')
+
+4.clear => to clear everything in ls 
+sessionStorage.Clear()-->
+
+    <h1>Session Storage</h1>
+
+    <script>
+      //setItem
+      sessionStorage.setItem("username", "abc");
+      sessionStorage.setItem("email", "abc@gmail.com");
+
+      //getItem
+
+      const userName = sessionStorage.getItem("username");
+      const email = sessionStorage.getItem("email");
+      console.log("Retrieving from session storage");
+      console.log("Username :", userName);
+      console.log("emnail :", email);
+
+      //remove the data
+
+      sessionStorage.removeItem("email");
+
+      const removedData = sessionStorage.getItem("email");
+      console.log("Email after removal:", removedData);
+
+      //  clear
+      sessionStorage.clear();
+      console.log("All data is cleared");
+    </script>
+  </body>
+</html>

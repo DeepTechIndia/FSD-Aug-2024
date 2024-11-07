@@ -17,6 +17,9 @@
         width: 100px;
         height: 100px;
         border: 1px solid gray;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
     </style>
   </head>
@@ -24,7 +27,7 @@
     <div id="calendar"></div>
 
     <script>
-      const calendar = documnet.getElementById("calendar");
+      const calendar = document.getElementById("calendar");
 
       for (let i = 1; i < 35; i++) {
         const day = document.createElement("div");

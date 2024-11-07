@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- events => actions  -->
+
+    <!-- 1. Mouse events => click, dbClick, mouseover, mouseout, mousemove etc  -->
+    <!-- 2. keyboard events => keyDown, keyup, keypress, esc -->
+    <!-- form events => submit, change, focus, blur -->
+    <!-- window events => load, resize, scroll -->
+
+    <!-- event listeneres -->
+    <!-- event  -->
+
+    <!-- using HTML Attributes -->
+
+    <!-- <button onclick="showMessage()">Click Me</button> -->
+
+    <!--  <p onmouseover="changeTextOnHover(this)" onmouseout="revertTextOnOut(this)">
+      Hover Over Me
+    </p> -->
+
+    <!--  <input
+      type="text"
+      onchange="alertInputChange()"
+      placeholder="Type Something"
+    /> -->
+
+    <!-- Using DOM properties -->
+    <!-- <button id="myButton">Click me</button> -->
+
+    <!-- <p id="hoverText">Hover Over me!</p> -->
+
+    <!-- addEventListners -->
+
+    <!-- <button id="myButton">Click Me</button> -->
+
+    <a href="https://www.example.com" id="myLink">Go to Example.com</a>
+
+    <script>
+      //  function showMessage() {
+      //     alert("Hello world");
+      //   }
+
+      //   function changeTextOnHover(element) {
+      //     console.log(element);
+      //     element.innerHTML = "Mouse is over!";
+      //   }
+
+      //   function revertTextOnOut(element) {
+      //     element.innerHTML = "Hover Over me";
+      //   }
+
+      /*   function alertInputChange() {
+        alert("Input value changed");
+      } */
+
+      // using DOm Properties
+
+      /*  const button = document.getElementById("myButton");
+      button.onclick = function () {
+        alert("Button clicked");
+      }; */
+
+      // const hoverText = document.getElementById("hoverText");
+      // hoverText.onmouseover = function () {
+      //   hoverText.innerHTML = "Mouse is Over!";
+      // };
+
+      // hoverText.onmouseout = function () {
+      //   hoverText.innerHTML = "Hover Over me";
+      // };
+
+      // AddEventListerns
+
+      /*  const button = document.getElementById("myButton");
+
+      button.addEventListener("click", function (event) {
+        // alert("Button Clicked");
+        // console.log(event);
+
+        console.log("Event Type: ", event.type); //click
+        console.log("Event Target: ", event.target); //<button id="myButton">Click Me</button>
+        console.log("Event time stamp", event.timeStamp);
+        console.log("Cancelable", event.cancelable);
+      }); */
+
+      const link = document.getElementById("myLink");
+
+      // preventDefault
+      link.addEventListener("click", function (event) {
+        event.preventDefault();
+        alert("Default action prevented");
+      });
+    </script>
+  </body>
+</html>

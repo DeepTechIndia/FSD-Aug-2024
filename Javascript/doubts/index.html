@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form id="frm">
+      <input type="text" name="username" id="user" />
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <script>
+      document.getElementById("frm").addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const username = document.getElementById("user").value;
+
+        localStorage.setItem("username", username);
+
+        window.location.href = "welcome.html";
+      });
+    </script>
+  </body>
+</html>

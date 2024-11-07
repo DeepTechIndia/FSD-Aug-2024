@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search Suggestions</title>
+    <style>
+      #searchInput {
+        width: 300px;
+        padding: 8px;
+        margin-bottom: 10px;
+      }
+      #suggestionsList {
+        list-style: none;
+        padding: 0;
+        max-height: 200px;
+        overflow-y: auto;
+      }
+      #suggestionsList li {
+        padding: 8px;
+        border: 1px solid #ddd;
+        cursor: pointer;
+      }
+      #suggestionsList li:hover {
+        background-color: #f0f0f0;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" id="searchInput" placeholder="Search for users..." />
+    <ul id="suggestionsList"></ul>
+
+    <script>
+      const apiUrl = "https://jsonplaceholder.typicode.com/users";
+
+      async function fetchUserData() {
+        try {
+          const response = await fetch(apiUrl);
+          const data = await response.json();
+          return data; // This should be an array of user objects
+        } catch (error) {
+          console.error("Error fetching user data:", error);
+        }
+      }
+
+      async function handleSearchInput(event) {
+        const query = event.target.value.toLowerCase();
+
+        if (query === "") {
+          displaySuggestions([]);
+          return;
+        }
+
+        const users = await fetchUserData();
+
+        const filteredUsers = users.filter((user) =>
+          user.name.toLowerCase().startsWith(query)
+        );
+
+        displaySuggestions(filteredUsers);
+      }
+
+      function displaySuggestions(users) {
+        const suggestionsList = document.getElementById("suggestionsList");
+        suggestionsList.innerHTML = "";
+
+        if (users.length === 0) {
+          const noResults = document.createElement("li");
+          noResults.textContent = "No results found";
+          suggestionsList.appendChild(noResults);
+        } else {
+          users.forEach((user) => {
+            const li = document.createElement("li");
+            li.textContent = user.name;
+            suggestionsList.appendChild(li);
+          });
+        }
+      }
+
+      document
+        .getElementById("searchInput")
+        .addEventListener("input", handleSearchInput);
+    </script>
+  </body>
+</html>

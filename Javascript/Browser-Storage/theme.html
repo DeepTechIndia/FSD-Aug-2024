@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        background-color: white;
+        color: black;
+        transition: background-color 0.3s, color 0.3s;
+      }
+
+      /* Dark theme */
+      .dark-theme {
+        background-color: #333;
+        color: white;
+      }
+
+      button {
+        padding: 10px 20px;
+        font-size: 16px;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome to the theme toggle App</h1>
+
+    <button id="theme-toggle">Toggle Theme</button>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const body = document.body;
+        const toggleButton = document.getElementById("theme-toggle");
+
+        const savedTheme = localStorage.getItem("theme");
+
+        if (savedTheme === "dark") {
+          body.classList.add("dark-theme");
+          toggleButton.textContent = "Switch to Light Mode";
+        } else {
+          localStorage.setItem("theme", "light");
+          toggleButton.textContent = "switch to Dark Mode";
+        }
+
+        toggleButton.addEventListener("click", () => {
+          body.classList.toggle("dark-theme");
+          if (body.classList.contains("dark-theme")) {
+            localStorage.setItem("theme", "dark");
+            toggleButton.textContent = "Switch to Light Mode";
+          } else {
+            localStorage.setItem("theme", "light");
+            toggleButton.textContent = "Switch to Dark Mode";
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
